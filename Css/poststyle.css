@@ -1,0 +1,89 @@
+@import 'images.css';
+@import 'navigation2.css';
+body {
+    font-family: Comic Sans MS;
+    padding: 20px;
+    background: rgb(229, 226, 226);
+    color: black;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 200px auto auto 100px;
+    grid-template-areas: "hd hd hd hd hd hd hd hd" "sum sum sum sum sum sum sum sum" "img img img img img img img img" "at at at at at at at at";
+    margin: auto;
+    grid-gap: 15px;
+}
+
+.box {
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#title {
+    grid-area: hd;
+    display: flex;
+    background-image: url(Images/8655-tesla-model-y-electric-car-silhouette-free-transparent-image-hd.jpg);
+    background-position: center;
+    color: rgb(229, 226, 226);
+    align-items: center;
+    flex-direction: column;
+}
+
+#summary {
+    grid-area: sum;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 30px;
+    background-color: rgb(143, 158, 139);
+}
+
+#author {
+    grid-area: at;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(143, 158, 139);
+    align-items: center;
+}
+
+.portrait {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    background-image: url(Images/foto.jpeg);
+    background-size: cover;
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
+
+/*media query*/
+
+@media(min-width: 320px) and (max-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px auto auto 70px;
+        grid-template-areas: "hd" "sum" "img" "at";
+        grid-gap: 15px;
+    }
+    #nav {
+        width: 400px;
+    }
+    .bigimg {
+        height: 200px;
+        width: 100%;
+    }
+    #image {
+        display: flex;
+        flex-direction: column;
+    }
+    .portrait {
+        width: 60px;
+        height: 60px;
+    }
+}

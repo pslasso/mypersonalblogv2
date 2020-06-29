@@ -1,0 +1,38 @@
+.smallimg {
+    width: 20%;
+    height: auto;
+    padding: 20px;
+    background-size: cover;
+    background-position: center;
+    border: 10px;
+    margin-left: 5px;
+}
+
+#summary {
+    grid-area: sum;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(91, 120, 118);
+    justify-content: center;
+}
+
+#blog1 {
+    background-image: url(Images/1366_2000.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50%;
+}
+
+#blog2 {
+    background-image: url(Images/jaguar.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50%;
+}
+
+#blog3 {
+    background-image: url(Images/porsche5.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50%;
+}

@@ -1,0 +1,26 @@
+/*imgs on posts*/
+
+.bigimg {
+    height: 300px;
+    width: 100%;
+    padding-left: 20px;
+    border: 10px solid rgb(41, 41, 41);
+}
+
+#post1 {
+    background-image: url(Images/1366_2000.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#post2 {
+    background-image: url(Images/jaguar.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+#post3 {
+    background-image: url(Images/porsche5.jpg);
+    background-position: center;
+    background-size: cover;
+}

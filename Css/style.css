@@ -1,0 +1,179 @@
+@import 'summarystyle.css';
+@import 'postimages.css';
+@import 'navigation.css';
+body {
+    font-family: Comic Sans MS;
+    padding: 20px;
+    background: rgb(229, 226, 226);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 200px 150px auto 100px;
+    grid-template-areas: "hd hd hd hd hd hd hd hd" "sum sum sum sum sum sum sum sum" "main main main main main main main sd" "ft ft ft ft ft ft ft ft";
+    margin: auto;
+    grid-gap: 15px;
+}
+
+.box {
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+/*Header*/
+
+#header {
+    display: flex;
+    grid-area: hd;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(Images/8655-tesla-model-y-electric-car-silhouette-free-transparent-image-hd.jpg);
+    background-position: center;
+    color: rgb(229, 226, 226);
+}
+
+
+/*main*/
+
+#leftcolumn {
+    display: flex;
+    grid-area: main;
+    flex-direction: column;
+    background-color: rgb(143, 158, 139);
+}
+
+
+/* Right column */
+
+#rightcolumn {
+    display: flex;
+    flex-direction: column;
+    grid-area: sd;
+    background-color: rgb(91, 120, 118);
+    align-items: flex-start;
+    align-items: center;
+    justify-content: first baseline;
+}
+
+#author {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid black;
+}
+
+#facts {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    justify-content: center;
+    text-align: center;
+    text-align: justify;
+    border-bottom: 2px solid black;
+}
+
+#weekly {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    justify-content: center;
+    text-align: center;
+    text-align: justify;
+}
+
+.sideimg {
+    width: 100%;
+    border: 10px solid rgb(41, 41, 41);
+}
+
+.portrait {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background-image: url(Images/foto.jpeg);
+    background-size: cover;
+}
+
+
+/* Footer */
+
+#footer {
+    grid-area: ft;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(91, 120, 118);
+}
+
+.fa {
+    padding: 20px;
+    font-size: 40px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+
+/* Facebook */
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+
+/*Youtube*/
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+
+/*post cards display*/
+
+.card {
+    background-color: rgb(91, 120, 118);
+    padding: 20px;
+    margin: 10px;
+    width: 80%;
+    height: fit-content;
+}
+
+
+/*media query*/
+
+@media(min-width: 320px) and (max-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px auto auto auto 70px;
+        grid-template-areas: "hd" "sum" "main" "sd" "ft";
+        grid-gap: 15px;
+    }
+    #nav {
+        width: 400px;
+    }
+    .bigimg {
+        height: 200px;
+        width: 100%;
+        padding: 0px;
+    }
+}

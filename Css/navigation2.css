@@ -1,0 +1,17 @@
+.menu {
+    color: rgb(229, 226, 226);
+    text-decoration: none;
+}
+
+#nav {
+    width: 800px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#navigation {
+    display: flex;
+    margin-bottom: 10px;
+}
