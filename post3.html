@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/poststyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>
         Blog Post
     </title>
@@ -12,20 +14,19 @@
 <body>
 
     <div class="container">
-        <div class="box" id="title">
+        <header class="box" id="header">
             <h2>PORSCHE 911</h2>
             <div class="box" id="navigation">
                 <nav>
                     <ul id="nav">
 
-                        <li><a class="menu" href="post2.html">Previous Post</a></li>
-                        <li><a class="menu" href="index.html">Home</a></li>
-                        <li><a class="menu" href="post1.html">Next Post</a></li>
+                        <li><button class="menu"><a class="menu" href="post2.html">Previous Post</a></button></li>
+                        <li><button class="menu"><a class="menu" href="index.html">Home</a></button></li>
 
                     </ul>
                 </nav>
             </div>
-        </div>
+        </header>
         <div class="box" id="summary">
             <h2>Porsche 911</h2>
             <p>The 911 traces its roots to sketches drawn by Ferdinand "Butzi" Porsche in 1959.[7] The Porsche 911 was developed as a more powerful, larger and a more comfortable replacement for the 356, the company's first model. The new car made its public
@@ -34,16 +35,21 @@
             <cite><a href="https://es.wikipedia.org/wiki/Porsche_911" target="_blank">More info: Wikipedia</a></cite>
         </div>
         <div class="box" id="image">
-            <img class="img" src="Css\Images\porsch3.jpg" />
-            <img class="img" src="Css\Images\porsche5.jpg" />
-            <img class="img" src="Css\Images\porsche2.jpg" />
-            <img class="img" src="Css\Images\porsche.jpg" />
+            <img class="img" src="Images\porsch3.jpg" />
+            <img class="img" src="Images\porsche5.jpg" />
+            <img class="img" src="Images\porsche2.jpg" />
+            <img class="img" src="Images\porsche.jpg" />
         </div>
         <div class="box" id="author">
             <div class="portrait"></div>
             <div id="data">
                 <h3>Paul Lasso</h3>
                 <h4>Quito-Ecuador, 26/jun/2020</h4>
+            </div>
+            <div id="social">
+                <h3>FOLLOW ME</h3>
+                <a href="https://www.facebook.com/paul.lasso/" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://www.youtube.com/channel/UCkOVuX7_e2AAi_0qieSfigA?view_as=subscriber" target="_blank" class="fa fa-youtube"></a>
             </div>
         </div>
     </div>

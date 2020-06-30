@@ -1,3 +1,5 @@
+/*summary style*/
+
 .smallimg {
     width: 20%;
     height: auto;
@@ -17,21 +19,21 @@
 }
 
 #blog1 {
-    background-image: url(Images/1366_2000.jpg);
+    background-image: url('../images/1366_2000.jpg');
     background-position: center;
     background-size: cover;
     height: 50%;
 }
 
 #blog2 {
-    background-image: url(Images/jaguar.jpg);
+    background-image: url('../images/jaguar.jpg');
     background-position: center;
     background-size: cover;
     height: 50%;
 }
 
 #blog3 {
-    background-image: url(Images/porsche5.jpg);
+    background-image: url('../images/porsche5.jpg');
     background-position: center;
     background-size: cover;
     height: 50%;

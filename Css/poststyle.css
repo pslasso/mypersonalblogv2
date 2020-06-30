@@ -1,5 +1,6 @@
 @import 'images.css';
 @import 'navigation2.css';
+@import 'socialmedia.css';
 body {
     font-family: Comic Sans MS;
     padding: 20px;
@@ -23,10 +24,10 @@ body {
     border-radius: 10px;
 }
 
-#title {
+#header {
     grid-area: hd;
     display: flex;
-    background-image: url(Images/8655-tesla-model-y-electric-car-silhouette-free-transparent-image-hd.jpg);
+    background-image: url('../images/8655-tesla-model-y-electric-car-silhouette-free-transparent-image-hd.jpg');
     background-position: center;
     color: rgb(229, 226, 226);
     align-items: center;
@@ -53,8 +54,8 @@ body {
 .portrait {
     width: 80px;
     height: 80px;
-    border-radius: 100px;
-    background-image: url(Images/foto.jpeg);
+    border-radius: 50%;
+    background-image: url('../images/foto.jpeg');
     background-size: cover;
     margin-left: 30px;
     margin-right: 50px;
@@ -63,16 +64,21 @@ body {
 
 /*media query*/
 
-@media(min-width: 320px) and (max-width: 800px) {
+@media(min-width: 150px) and (max-width: 800px) {
     .container {
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 100px auto auto 70px;
+        grid-template-rows: 100px auto auto 100px;
         grid-template-areas: "hd" "sum" "img" "at";
         grid-gap: 15px;
     }
+    #header {
+        background-size: contain;
+    }
     #nav {
-        width: 400px;
+        width: 250px;
+        align-content: center;
+        align-items: center;
     }
     .bigimg {
         height: 200px;
@@ -82,8 +88,23 @@ body {
         display: flex;
         flex-direction: column;
     }
+    #author {
+        display: flex;
+        flex-direction: row;
+        font-size: 10px;
+    }
     .portrait {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
+    }
+    .fa {
+        padding: 5px;
+        margin-left: 10px;
+        font-size: 10px;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
     }
 }

@@ -1,6 +1,8 @@
 .menu {
+    background-color: black;
     color: rgb(229, 226, 226);
     text-decoration: none;
+    border-radius: 30px;
 }
 
 #nav {

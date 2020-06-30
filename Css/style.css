@@ -1,6 +1,7 @@
 @import 'summarystyle.css';
 @import 'postimages.css';
 @import 'navigation.css';
+@import 'socialmedia.css';
 body {
     font-family: Comic Sans MS;
     padding: 20px;
@@ -33,7 +34,7 @@ a {
     grid-area: hd;
     flex-direction: column;
     justify-content: center;
-    background-image: url(Images/8655-tesla-model-y-electric-car-silhouette-free-transparent-image-hd.jpg);
+    background-image: url('../images/8655-tesla-model-y-electric-car-silhouette-free-transparent-image-hd.jpg');
     background-position: center;
     color: rgb(229, 226, 226);
 }
@@ -104,7 +105,7 @@ a {
     width: 200px;
     height: 200px;
     border-radius: 100px;
-    background-image: url(Images/foto.jpeg);
+    background-image: url('../images/foto.jpeg');
     background-size: cover;
 }
 
@@ -115,35 +116,10 @@ a {
     grid-area: ft;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+    flex-flow: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
     background-color: rgb(91, 120, 118);
-}
-
-.fa {
-    padding: 20px;
-    font-size: 40px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-}
-
-
-/* Facebook */
-
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-
-/*Youtube*/
-
-.fa-youtube {
-    background: #bb0000;
-    color: white;
 }
 
 
@@ -160,7 +136,7 @@ a {
 
 /*media query*/
 
-@media(min-width: 320px) and (max-width: 800px) {
+@media(min-width: 150px) and (max-width: 800px) {
     .container {
         display: grid;
         grid-template-columns: 100%;
@@ -175,5 +151,23 @@ a {
         height: 200px;
         width: 100%;
         padding: 0px;
+    }
+    #footer {
+        font-size: 10px;
+    }
+    .fa {
+        padding: 5px;
+        margin-left: 10px;
+        font-size: 10px;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+    }
+    .portrait {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
     }
 }
